@@ -3,8 +3,6 @@ FROM jkaninda/laravel-php-fpm:8.4-alpine
 ENV XDEBUG_MODE=coverage
 
 RUN echo "🔧 Setting up Laravel test environment..." && \
-    echo "📄 Copying .env.example to .env..." && \
-    cp .env.example .env && \
     echo "🐘 PHP Version:" && \
     php --version && \
     echo "📦 Installing system dependencies..." && \
