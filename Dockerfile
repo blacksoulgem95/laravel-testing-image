@@ -15,10 +15,4 @@ RUN echo "🔧 Setting up Laravel test environment..." && \
     echo "📊 Setting Xdebug mode for coverage..." && \
     echo "🎼 Composer Version:" && \
     composer --version && \
-    echo "📚 Installing Composer dependencies..." && \
-    composer install --no-progress --prefer-dist --optimize-autoloader && \
-    echo "🔑 Generating application key..." && \
-    php artisan key:generate && \
-    echo "🗄️  Creating SQLite database..." && \
-    touch database/database.sqlite && \
     echo "✅ Setup completed successfully!"
