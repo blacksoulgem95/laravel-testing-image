@@ -6,7 +6,7 @@ RUN echo "🔧 Setting up Laravel test environment..." && \
     echo "🐘 PHP Version:" && \
     php --version && \
     echo "📦 Installing system dependencies..." && \
-    apk add --no-cache --update linux-headers autoconf g++ make pcre-dev && \
+    apk add --no-cache --update linux-headers autoconf g++ make pcre-dev nodejs npm && \
     echo "🐛 Installing Xdebug..." && \
     pecl install xdebug && \
     docker-php-ext-enable xdebug && \
